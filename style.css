@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+    overflow-x:clip;
+}
 .card{
     box-shadow: 1px 1px 10px 1px rgb(117, 117, 117);
 }
