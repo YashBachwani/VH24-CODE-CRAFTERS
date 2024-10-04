@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+background: rgb(212, 255, 251);
+font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: xx-large;
+    color:rgb(30, 48, 80)
+}
+.card{
+	border: none;
+	max-width: 450px;
+	border-radius: 15px;
+	margin: 150px 0 150px;
+	padding: 35px;
+	padding-bottom: 20px!important;
+    background-color: rgb(27, 76, 165);
+}
+.heading{
+	color: #C1C1C1;
+	font-size: 14px;
+	font-weight: 500;
+}
+img{
+	transform: translate(160px,-10px);
+}
+img:hover{
+    cursor: pointer;
+}
+.text-warning{
+	font-size: 12px;
+	font-weight: 500;
+	color: #ffffff!important;
+}
+#cno{
+	transform: translateY(-10px);
+}
+input{
+	border-bottom: 1.5px solid #e7e5d8!important;
+	font-weight: bold;
+	border-radius: 0;
+	border: 0;
+
+}
+.form-group input:focus{
+	border: 0;
+	outline: 0;
+}
+.col-sm-5{
+	padding-left: 90px;
+}
+.btn{
+	border: none;
+	border-radius: 30px;
+}
+.btn:focus{
+    box-shadow: none;
+}    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12">
+                <div class="card mx-auto">
+                    <p class="heading">PAYMENT DETAILS</p>
+                        <form class="card-details ">
+                            <div class="form-group mb-0">
+                                    <p class="text-light mb-0">Card Number</p> 
+                                      <input type="text" name="card-num" placeholder="1234 5678 9012 3457" size="17" id="cno" minlength="19" maxlength="19">
+                                    <img src="https://trak.in/wp-content/uploads/2020/07/Rupay-Cards-Big-1.jpg" width="75px" height="60px" />
+                            </div>
+    
+                            <div class="form-group">
+                                <p class="text-warning mb-0" style="font-size: medium;">Cardholder's Name</p> <input type="text" name="name" placeholder="Name" size="17">
+                            </div>
+                            <div class="form-group pt-2">
+                                <div class="row d-flex">
+                                    <div class="col-sm-4">
+                                        <p class="text-warning mb-0" style="font-size: medium;">Expiration</p>
+                                        <input type="text" name="exp" placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="text-warning mb-0" style="font-size: medium;">Cvv</p>
+                                        <input type="password" name="cvv" placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3">
+                                    </div>
+                                    <div class="col-sm-5 pt-0">
+                                       <button type="button" class="btn btn-dark"> <a href="thankyou.html">Submit</a></button>
+                                    </div>
+                                </div>
+                            </div>		
+                        </form>
+                </div>  
+            </div>
+        </div>
+    </div><center>
+    <div><a href="./images/q">Pay with QR</a></div></center>
+</body>
+</html>
